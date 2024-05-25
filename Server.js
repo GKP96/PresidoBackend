@@ -8,17 +8,17 @@ import mongoose from "mongoose";
 import cors from "cors";
 import UserRouter from "./routes/UserRouter.js";
 import PropertyRouter from "./routes/PropertyRouter.js";
-const options = [
-  cors({
-    origin: "*",
-    methods: "*",
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-  }),
-];
+// const options = [
+//   cors({
+//     origin: "*",
+//     methods: "*",
+//     allowedHeaders: ["Content-Type", "Authorization"],
+//     credentials: true,
+//   }),
+// ];
 
 const app = express();
-app.use(options);
+// app.use(options);
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(cors());
